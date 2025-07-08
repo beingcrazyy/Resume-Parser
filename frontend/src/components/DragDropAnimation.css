@@ -1,0 +1,56 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.drag-icon {
+  display: inline-block;
+}
+
+.drag-active .drag-icon {
+  animation: bounce 1s ease infinite;
+}
+
+.drag-over {
+  animation: pulse 1.5s ease infinite;
+}
+
+.file-item-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.file-item-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-in, transform 300ms ease-out;
+}
+
+.file-item-exit {
+  opacity: 1;
+}
+
+.file-item-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms ease-in, transform 300ms ease-out;
+}

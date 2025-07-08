@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+
+# Virtual environment
+virtualenv/
+virtual-env/
+v_env/
+env/
+venv/
+
+# Environment variables
+.env
+.flaskenv
+
+# IDEs
+.vscode/
+.idea/
+
+# Operating System
+.DS_Store
+thumbs.db
+
+# Uploads
+temp_uploads/
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# Google Sheets Credentials
+*.json
